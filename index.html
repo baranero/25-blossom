@@ -1,0 +1,39 @@
+<div>
+  <div class="top-left large"></div>
+  <div class="top-right small"></div>
+  <div class="bottom-left small"></div>
+  <div class="bottom-right large"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    background: #998235;
+  }
+  .large,.small {
+    position: absolute;
+    width: 80px;
+  }
+  .large {
+    height: 100px;
+    background: #1a4341;
+    border-radius: 0 50px;
+  }
+  .small {
+    background: #f3ac3c;
+    height: 60px;
+    border-radius: 50px 0;
+  }
+  .top-left,.top-right {
+    top: 60px;
+  }
+  .top-left,.bottom-left {
+    left: 110px;
+  }
+  .top-right,.bottom-right {
+    right: 110px;
+  }
+  .bottom-right,.bottom-left {
+    bottom: 60px;
+    transform: scaleX(-1);
+  }
+</style>
